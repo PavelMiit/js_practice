@@ -313,5 +313,10 @@ return        - что-то возвращает из функции
 .toUpperCase()- возвращает значение строки, преобразованное в верхний регистр
 &&            - означает «И» (и то, и другое)
 ||            - означет «ИЛИ» (или то, или другое, или оба)
+JSON.parse()  - спарсить Response. Пример: let jsonData = JSON.parse(responseBody)
+                Спарсить Request:
+GET METHOD:  let req_data = pm.request.url.query.toObject();
+POST METHOD: let req = request.data;
+JSON.stringify() - преобразует значение JavaScript в строку JSON
 
 
