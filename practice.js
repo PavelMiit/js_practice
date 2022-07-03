@@ -101,5 +101,35 @@ const getLetter = (word, number) => {
   return q1
 }
 
- 
 
+//Реализуйте функцию normalizeUrl(), которая выполняет так называемую нормализацию данных. Она принимает 
+//адрес сайта и возвращает его с https:// в начале. Функция принимает адреса в виде АДРЕС или 
+//https://АДРЕС, но всегда возвращает адрес в виде https://АДРЕС
+ const normalizeUrl = (url) => {
+  let addition
+  if (url.startsWith('https://')) {
+    addition = url
+  } else {
+    addition = 'https://' + url
+  }
+  return addition
+}
+
+
+
+//Реализуйте функцию convertText(), которая принимает на вход строку и, если первая буква не заглавная, 
+//возвращает перевернутый вариант исходной строки. Если первая буква заглавная, то строка возвращается без 
+//изменений. Если на вход передана пустая строка, функция должна вернуть пустую строку.
+const convertText = (string) => {
+  let input
+  if (string === '') {
+    input = ''
+  }
+  else if (string[0].toUpperCase() === string[0]) {
+    input = string
+  }
+  else {
+    input = string.split("").reverse().join("")
+  }
+  return input
+}
