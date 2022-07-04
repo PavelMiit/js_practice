@@ -133,3 +133,24 @@ const convertText = (string) => {
   }
   return input
 }
+
+
+//Реализуйте функцию getNumberExplanation(), которая принимает на вход число и возвращает объяснение 
+//этого числа. Если для числа нет объяснения, то возвращается null:
+
+const getNumberExplanation = (number) => {
+   let input
+   if (number === 666) {
+    input = 'devil number'
+   }
+   else if (number === 42) {
+    input = 'answer for everything'
+    } 
+    else if (number === 7) {
+    input = 'prime number'
+    } 
+    else  {
+    input = null
+    }
+return input
+}
