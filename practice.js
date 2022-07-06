@@ -137,7 +137,6 @@ const convertText = (string) => {
 
 //Реализуйте функцию getNumberExplanation(), которая принимает на вход число и возвращает объяснение 
 //этого числа. Если для числа нет объяснения, то возвращается null:
-
 const getNumberExplanation = (number) => {
    let input
    if (number === 666) {
@@ -154,3 +153,20 @@ const getNumberExplanation = (number) => {
     }
 return input
 }
+
+
+//Модифицируйте функцию printNumbers() так, чтобы она выводила числа в обратном порядке. Для этого 
+//нужно идти от верхней границы к нижней. То есть счётчик должен быть инициализирован максимальным 
+значением, а в теле цикла его нужно уменьшать до нижней границы.
+const printNumbers = (initialNumber) => {
+  // BEGIN (write your solution here)
+  let i = initialNumber
+  while (i >= 1) {
+    console.log(i);
+    i = i - 1;
+  }
+  console.log('finished!');
+  // END
+};
+
+export default printNumbers;
