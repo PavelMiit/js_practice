@@ -179,3 +179,16 @@ const joinNumbersFromRange = (start, finish) => {
   }
   return result;
 };
+
+
+//Реализуйте функцию mySubstr(), которая извлекает из строки подстроку указанной длины. Она 
+//принимает на вход два аргумента (строку и длину) и возвращает подстроку, начиная с первого символа.
+const mySubstr = (text, number) => {
+  let i = 0;
+  let result = '';
+  while (i < number) {
+    result = `${result}${text[i]}`;
+    i = i + 1;
+  }
+  return result;
+};
