@@ -208,3 +208,23 @@ const countChars = (str, char) => {
   }
   return count;
 };
+
+
+//Напишите функцию makeItFunny(), которая принимает на вход строку и возвращает её копию, у которой 
+//каждый n-ный элемент переведен в верхний регистр. n – задается на входе в функцию.
+const makeItFunny = (str, n) => {
+  let i = 0
+  let result = ''
+
+  while (i < str.length) {
+    if ((i + 1) % n === 0) {
+      let Up = str[i].toUpperCase()
+      result = result + Up
+    } else {
+      result = result + str[i]
+    }
+    i = i + 1
+  }
+
+  return result
+}
