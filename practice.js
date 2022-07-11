@@ -228,3 +228,25 @@ const makeItFunny = (str, n) => {
 
   return result
 }
+
+
+//В файле myMathModule.js: 
+//1.Создайте функцию getTriangleArea(), которая принимает два аргумента h и b и вычисляет площадь 
+//треугольника по формуле A = 1/2 * h * b, где h — высота, а b — основание треугольника.
+//2.Экспортируйте функцию.
+//В файле solution.js:
+//1.Импортируйте функцию getTriangleArea() из модуля myMathModule.
+//2.Создайте функцию, которая принимает аргумент n и возвращает площадь треугольника высотой n
+// и основанием n2/2. Используйте функцию square() (принимает число и возвращает его квадрат).
+//myMathModule.js
+export const getTriangleArea = (h, b) => {
+  let area = 0.5 * h * b
+  return area
+}
+//solution.js:
+import { getTriangleArea } from './myMathModule.js'
+
+const getn = (n) => {
+  let area2 = getTriangleArea(n, (n ** 2) / 2)
+  return area2
+}
