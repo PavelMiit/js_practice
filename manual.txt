@@ -321,6 +321,6 @@ JSON.parse()  - спарсить Response. Пример: let jsonDataResp = JSON
                 Спарсить Request:
 GET METHOD:  let jsonDataReq = pm.request.url.query.toObject()
 POST METHOD: let jsonDataReq = request.data
-JSON.stringify() - преобразует значение JavaScript в строку JSON
+JSON.stringify() -  преобразует значение JavaScript в строку JSON
 
 
